@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { device } from "../../utils/BreakPoints";
 
 export const Section1 = styled.section`
   display: flex;

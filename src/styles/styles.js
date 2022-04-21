@@ -140,26 +140,26 @@ export const MainWrapper = styled.div`
   } */
 
   @media screen and ${device.mobileL} {
-    background: blue;
+    /* background: blue; */
     ${NavWrapper} {
       display: none;
     }
   }
   @media screen and ${device.tablet} {
-    background: yellow;
+    /* background: yellow; */
     ${NavWrapper} {
       display: flex;
     }
   }
   @media screen and ${device.laptop} {
-    background: green;
+    /* background: green; */
 
     ${NavWrapper} {
       display: flex;
     }
   }
   @media screen and ${device.laptopL} {
-    background: pink;
+    /* background: pink; */
     ${NavWrapper} {
       display: flex;
     }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../utils/BreakPoints";
 
 export const Section1 = styled.section`
   display: flex;
@@ -14,6 +15,7 @@ export const Section1 = styled.section`
     text-align: justify;
     line-height: 2rem;
   }
+ 
 `;
 
 export const Section2 = styled.section`
@@ -58,5 +60,49 @@ export const Box3 = styled.section`
   .videPlayer {
     width: auto !important;
     object-fit: contain;
+  }
+`;
+
+export const HomeWrapper = styled.div`
+  @media only screen and (max-width: 600px) {
+    ${Section1} {
+      padding: 20px;
+      height: auto;
+    }
+
+    ${Section2} {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        width: 100%;
+        margin-top: 25px;
+
+        h3 {
+          margin-bottom: 15px;
+        }
+      }
+
+      ${Box1} {
+        text-align: center;
+        margin-top: 5px;
+        column-gap: 0px;
+        p {
+          text-align: center;
+          padding: 0;
+        }
+      }
+    }
   }
 `;

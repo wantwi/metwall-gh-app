@@ -8,7 +8,7 @@ const Header = () => {
       <LogoWrapper>
         <img className="img" alt="Logo" src={Logo} />
       </LogoWrapper>
-      <SocialWrapper>
+      <SocialWrapper className="sociahHeader">
         <SocialComponent />
       </SocialWrapper>
     </HeaderWrapper>

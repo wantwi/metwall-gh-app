@@ -1,11 +1,18 @@
 import React from "react";
 import SliderComponet from "../../components/SliderComponet";
-import { Section1, Section2, Box1, Box2, Box3 } from "./home.styles";
+import {
+  Section1,
+  Section2,
+  Box1,
+  Box2,
+  Box3,
+  HomeWrapper,
+} from "./home.styles";
 import ReactPlayer from "react-player";
 
 const HomePage = () => {
   return (
-    <div>
+    <HomeWrapper>
       <SliderComponet />
       <Section1>
         <h2>Welcome !</h2>
@@ -54,7 +61,7 @@ const HomePage = () => {
           />
         </Box3>
       </Section2>
-    </div>
+    </HomeWrapper>
   );
 };
 

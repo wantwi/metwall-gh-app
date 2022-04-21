@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import Image3 from "../../images/img3.jpg";
 import Image2 from "../../images/img2.jpg";
-export const Wrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-`;
 
 export const ImageSection = styled.section`
   display: flex;
@@ -118,5 +114,35 @@ export const TextContent = styled.div`
   flex-direction: column;
   .mt-3 {
     margin-top: 40px;
+  }
+`;
+
+export const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 600px) {
+    ${ImageSection} {
+      height: 50vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    ${Grid} {
+      padding: 20px;
+      padding-bottom: 70px;
+      height:auto p {
+      }
+    }
+
+    ${ControlWrapper} {
+      .mt-3 {
+        margin-top: 20px;
+      }
+    }
+
+    ${TextContent} {
+      padding: 20px;
+    }
   }
 `;

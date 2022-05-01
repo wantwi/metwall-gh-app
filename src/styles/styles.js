@@ -39,6 +39,33 @@ export const NavWrapper = styled.div`
     }
   }
 `;
+
+export const MinNavWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  background: #00adef;
+  gap: 10px;
+  transition: all 0.5s ease-in-out;
+  display: none;
+
+  &&:target {
+    height: 500px;
+  }
+  a {
+    align-self: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  a.active {
+    color: #fff;
+    text-decoration: none;
+  }
+`;
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
@@ -67,6 +94,15 @@ export const LogoWrapper = styled.div`
   align-self: start;
   img {
     width: 50em;
+  }
+`;
+
+export const NavIconWrapper = styled.span`
+  margin: 20px 0;
+  display: none;
+  .navIcon {
+    color: #ffffff;
+    font-size: 35px;
   }
 `;
 
@@ -114,6 +150,12 @@ export const MainWrapper = styled.div`
       display: none;
     }
 
+    ${HeaderWrapper} {
+      position: fixed;
+      z-index: 1;
+      width: 100%;
+    }
+
     ${SliderImageWrapper} {
       img {
         height: 50vh;
@@ -128,6 +170,20 @@ export const MainWrapper = styled.div`
 
     ${NavWrapper} {
       display: none;
+    }
+    ${NavIconWrapper} {
+      display: block;
+    }
+
+    ${MinNavWrapper} {
+      display: block;
+      position: fixed;
+      z-index: 1;
+      width: 100%;
+      top: 70px;
+    }
+    ${Main} {
+      margin-top: 70px;
     }
   }
 

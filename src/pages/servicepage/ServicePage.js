@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Wrapper,
   Section1,
@@ -10,6 +10,9 @@ import {
 } from "./service.styles";
 import Image2 from "../../images/plan.jpg";
 const ServicePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Wrapper>
       <ImageSection></ImageSection>

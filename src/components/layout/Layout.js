@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../context/context";
 import { MainWrapper, Main } from "../../styles/styles";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-import Nav from "../nav/Nav";
+import { Nav, MinNav } from "../nav/Nav";
 
 const Layout = (props) => {
+  const { showNav } = useContext(AppContext);
+
   return (
     <MainWrapper>
       <Header />
       <Nav />
-      <Main>{props.children}</Main>
+      {showNav ? <MinNav /> : null}
 
+      <Main>{props.children}</Main>
       <Footer />
     </MainWrapper>
   );

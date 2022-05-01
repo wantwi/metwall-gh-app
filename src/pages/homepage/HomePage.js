@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SliderComponet from "../../components/SliderComponet";
 import {
   Section1,
@@ -11,6 +11,9 @@ import {
 import ReactPlayer from "react-player";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <HomeWrapper>
       <SliderComponet />

@@ -176,7 +176,7 @@ export const MainWrapper = styled.div`
     }
 
     ${MinNavWrapper} {
-      display: block;
+      display: flex;
       position: fixed;
       z-index: 1;
       width: 100%;

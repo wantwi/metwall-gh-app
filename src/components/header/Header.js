@@ -6,7 +6,7 @@ import {
   NavIconWrapper,
 } from "../../styles/styles";
 import SocialComponent from "../../components/socialComponent";
-import Logo from "../../images/logo.jpg";
+import Logo from "../../images/logo.png";
 import * as FaIcon from "react-icons/fa";
 import { AppContext } from "../../context/context";
 

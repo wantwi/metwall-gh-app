@@ -143,17 +143,18 @@ export const MainWrapper = styled.div`
   @media only screen and (max-width: 600px) {
     align-self: center;
     .img {
-      width: 100%;
+      width: 40%;
       overflow-x: hidden;
     }
     .sociahHeader {
-      display: none;
+      display: none !important;
     }
 
     ${HeaderWrapper} {
       position: fixed;
       z-index: 1;
       width: 100%;
+      padding: 0 20px !important;
     }
 
     ${SliderImageWrapper} {
@@ -183,7 +184,37 @@ export const MainWrapper = styled.div`
       top: 70px;
     }
     ${Main} {
+      width: 100vw;
+      margin: 0 auto;
       margin-top: 70px;
+    }
+    ${FooterWrapper} {
+      flex-direction: column;
+      background: #5a514f;
+      height: 250px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    body {
+      background: red !important;
+    }
+    .img {
+      width: 40%;
+      overflow-x: hidden;
+    }
+    .sociahHeader {
+      display: flex;
+      width: 200px;
+    }
+    ${HeaderWrapper} {
+      padding-right: 0;
+    }
+    ${NavWrapper} {
+      display: flex !important;
+      input {
+        display: none;
+      }
     }
   }
 
